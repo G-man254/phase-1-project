@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       function renderCarList() {
         carList.innerHTML = "";
         //let Cars = fetch('http://localhost:3000/Cars')
-        data.cars.forEach((car)=> {
+        data.forEach((car)=> {
           const carName = car.MakeName;
           const carItem = document.createElement("div");
           carItem.textContent = carName;
